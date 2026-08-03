@@ -1,6 +1,7 @@
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
+    fbq?: (...args: unknown[]) => void;
   }
 }
 
@@ -21,6 +22,12 @@ export const trackWhatsAppConversion = () => {
     window.gtag("event", "conversion", {
       send_to: "AW-17944507781/9JknCN-GoPYbEIXrzexC",
     });
+    window.gtag("event", "conversion", {
+      send_to: "AW-11111983031/HskoCISCsJAYELfPzbIp",
+    });
+  }
+  if (window.fbq) {
+    window.fbq("track", "Contact");
   }
 };
 
@@ -31,6 +38,12 @@ export const trackCallConversion = () => {
       value: 1.0,
       currency: "BRL",
     });
+    window.gtag("event", "conversion", {
+      send_to: "AW-11111983031/HskoCISCsJAYELfPzbIp",
+    });
+  }
+  if (window.fbq) {
+    window.fbq("track", "Contact");
   }
 };
 
