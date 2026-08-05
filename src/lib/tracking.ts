@@ -20,9 +20,6 @@ export const PHONE_DISPLAY_TEXT = PHONE_DISPLAY;
 export const trackWhatsAppConversion = () => {
   if (window.gtag) {
     window.gtag("event", "conversion", {
-      send_to: "AW-17944507781/9JknCN-GoPYbEIXrzexC",
-    });
-    window.gtag("event", "conversion", {
       send_to: "AW-11111983031/HskoCISCsJAYELfPzbIp",
     });
   }
@@ -34,12 +31,9 @@ export const trackWhatsAppConversion = () => {
 export const trackCallConversion = () => {
   if (window.gtag) {
     window.gtag("event", "conversion", {
-      send_to: "AW-17944507781/F6T8CInVk_YbEIXrzexC",
+      send_to: "AW-11111983031/HskoCISCsJAYELfPzbIp",
       value: 1.0,
       currency: "BRL",
-    });
-    window.gtag("event", "conversion", {
-      send_to: "AW-11111983031/HskoCISCsJAYELfPzbIp",
     });
   }
   if (window.fbq) {
