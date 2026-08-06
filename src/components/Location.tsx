@@ -22,6 +22,8 @@ const Location = () => {
             <img
               src={mapaImg}
               alt="Localização do escritório Fábio Péricles em Santo André"
+              width={960}
+              height={496}
               className="w-full h-auto"
               loading="lazy"
             />

@@ -14,6 +14,8 @@ const About = () => {
               <img
                 src={drFabioImg}
                 alt="Dr. Fábio Péricles"
+                width={634}
+                height={792}
                 className="w-full h-auto rounded-xl object-cover shadow-2xl grayscale-[10%] hover:grayscale-0 transition-all duration-500"
                 loading="lazy"
               />

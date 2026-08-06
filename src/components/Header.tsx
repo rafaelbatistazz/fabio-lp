@@ -48,6 +48,8 @@ const Header = () => {
         <button
           className="md:hidden p-2 text-foreground"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={menuOpen}
         >
           {menuOpen ? <X /> : <Menu />}
         </button>
